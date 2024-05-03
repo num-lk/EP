@@ -1,16 +1,11 @@
 [gd_scene load_steps=3 format=3 uid="uid://dsqqcdsal257h"]
 
-[ext_resource type="Script" path="res://player_controller.gd" id="1_adxtl"]
-[ext_resource type="Script" path="res://CharacterBody2D.gd" id="2_603jn"]
+[ext_resource type="PackedScene" uid="uid://cninr6go87686" path="res://assets/nodes/player/player.tscn" id="1_vjjng"]
+[ext_resource type="PackedScene" uid="uid://cus5pu6yv363d" path="res://assets/nodes/camera/camera.tscn" id="2_xj0bq"]
 
 [node name="Scene" type="Node2D"]
 
-[node name="Node2D" type="Node2D" parent="."]
-script = ExtResource("1_adxtl")
+[node name="Player" parent="." instance=ExtResource("1_vjjng")]
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
-script = ExtResource("2_603jn")
-
-[node name="RigidBody2D" type="RigidBody2D" parent="."]
-
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="Camera" parent="." node_paths=PackedStringArray("target") instance=ExtResource("2_xj0bq")]
+target = NodePath("../Player")
