@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://dsqqcdsal257h"]
+
+[ext_resource type="Script" path="res://player_controller.gd" id="1_adxtl"]
+[ext_resource type="Script" path="res://CharacterBody2D.gd" id="2_603jn"]
+
+[node name="Scene" type="Node2D"]
+
+[node name="Node2D" type="Node2D" parent="."]
+script = ExtResource("1_adxtl")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+script = ExtResource("2_603jn")
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
