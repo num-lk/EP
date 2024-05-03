@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://cu638j1ysntej" path="res://assets/nodes/player/icon.svg" id="2_8aw2y"]
 
 [node name="Player" type="CharacterBody2D"]
+motion_mode = 1
 script = ExtResource("1_v4b0c")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
