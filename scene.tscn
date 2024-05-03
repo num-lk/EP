@@ -12,3 +12,5 @@ script = ExtResource("1_adxtl")
 script = ExtResource("2_603jn")
 
 [node name="RigidBody2D" type="RigidBody2D" parent="."]
+
+[node name="Camera2D" type="Camera2D" parent="."]
