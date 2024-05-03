@@ -1,11 +1,10 @@
-[gd_scene load_steps=11 format=3 uid="uid://dsqqcdsal257h"]
+[gd_scene load_steps=10 format=3 uid="uid://dsqqcdsal257h"]
 
 [ext_resource type="PackedScene" uid="uid://cninr6go87686" path="res://assets/nodes/player/player.tscn" id="1_vjjng"]
 [ext_resource type="PackedScene" uid="uid://cus5pu6yv363d" path="res://assets/nodes/camera/camera.tscn" id="2_xj0bq"]
-[ext_resource type="Texture2D" uid="uid://cu638j1ysntej" path="res://assets/nodes/player/icon.svg" id="3_cwqyc"]
-[ext_resource type="Texture2D" uid="uid://debubwrr7aypo" path="res://assets/tilemaps/tilemap.png" id="4_g7a0r"]
-[ext_resource type="Texture2D" uid="uid://dkpqgoulnq3g3" path="res://assets/tilemaps/overlay.png" id="5_wn0dv"]
-[ext_resource type="Texture2D" uid="uid://bic5ve4fmwouo" path="res://assets/tilemaps/furniture.png" id="6_ilw3i"]
+[ext_resource type="Texture2D" uid="uid://b4t40or2sywmd" path="res://assets/tilemaps/tilemap.png" id="4_g7a0r"]
+[ext_resource type="Texture2D" uid="uid://c1rkdojkkgsfq" path="res://assets/tilemaps/overlay.png" id="5_wn0dv"]
+[ext_resource type="Texture2D" uid="uid://cr103uili4dv5" path="res://assets/tilemaps/furniture.png" id="6_ilw3i"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jnv3a"]
 texture = ExtResource("4_g7a0r")
@@ -262,13 +261,8 @@ sources/2 = SubResource("TileSetAtlasSource_i8fpr")
 
 [node name="Scene" type="Node2D"]
 
-[node name="Player" parent="." instance=ExtResource("1_vjjng")]
-
 [node name="Camera" parent="." node_paths=PackedStringArray("target") instance=ExtResource("2_xj0bq")]
 target = NodePath("../Player")
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("3_cwqyc")
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(2, -1)
@@ -280,3 +274,5 @@ layer_1/name = "Furniture"
 layer_1/tile_data = PackedInt32Array(65538, 983042, 3, 2, 983042, 3, -65534, 983042, 3, -131070, 983042, 3, -196606, 983042, 3, -262142, 983042, 3, -262144, 983042, 3, -196608, 983042, 3, -131072, 983042, 3, -65536, 983042, 3, 0, 983042, 3, 65536, 983042, 3, -196610, 983042, 3, -131074, 983042, 3, -65538, 983042, 3, -2, 983042, 3, 65534, 983042, 3, 131070, 983042, 3, -196612, 983042, 3, -131076, 983042, 3, -65540, 983042, 3, -4, 983042, 3, 65532, 983042, 3, 131068, 983042, 3, -196614, 983042, 3, -131078, 983042, 3, -65542, 983042, 3, -6, 983042, 3, 65530, 983042, 3, 131066, 983042, 3, 327682, 983042, 3, 393218, 983042, 3, 458754, 983042, 3, 524290, 983042, 3, 589826, 983042, 3, 655362, 983042, 3, 655360, 983042, 3, 589824, 983042, 3, 524288, 983042, 3, 458752, 983042, 3, 393216, 983042, 3, 327680, 983042, 3, 393214, 983042, 3, 458750, 983042, 3, 524286, 983042, 3, 589822, 983042, 3, 655358, 983042, 3, 720894, 983042, 3, 393212, 983042, 3, 458748, 983042, 3, 524284, 983042, 3, 589820, 983042, 3, 655356, 983042, 3, 720892, 983042, 3, 393210, 983042, 3, 458746, 983042, 3, 524282, 983042, 3, 589818, 983042, 3, 655354, 983042, 3, 720890, 983042, 3, -458760, 327681, 0, -393224, 327681, 1, -458759, 393217, 0, -393223, 393217, 1, -458758, 458753, 0, -393222, 458753, 1, -458755, 327681, 0, -393219, 327681, 1, -458754, 393217, 0, -393218, 393217, 1, -458753, 458753, 0, -393217, 458753, 1, -524286, 327681, 0, -458750, 327681, 1, -524285, 393217, 0, -458749, 393217, 1, -524284, 458753, 0, -458748, 458753, 1, -524282, 327681, 0, -458746, 327681, 1, -524281, 393217, 0, -458745, 393217, 1, -524280, 458753, 0, -458744, 458753, 1)
 layer_2/name = "Other"
 layer_2/tile_data = PackedInt32Array()
+
+[node name="Player" parent="." instance=ExtResource("1_vjjng")]
