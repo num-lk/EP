@@ -276,3 +276,5 @@ layer_2/name = "Other"
 layer_2/tile_data = PackedInt32Array()
 
 [node name="Player" parent="." instance=ExtResource("1_vjjng")]
+position = Vector2(-12, 55)
+metadata/_edit_group_ = true
