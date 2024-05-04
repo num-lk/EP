@@ -2,9 +2,9 @@
 
 [ext_resource type="PackedScene" uid="uid://cninr6go87686" path="res://assets/nodes/player/player.tscn" id="1_vjjng"]
 [ext_resource type="PackedScene" uid="uid://cus5pu6yv363d" path="res://assets/nodes/camera/camera.tscn" id="2_xj0bq"]
-[ext_resource type="Texture2D" uid="uid://b4t40or2sywmd" path="res://assets/tilemaps/tilemap.png" id="4_g7a0r"]
-[ext_resource type="Texture2D" uid="uid://c1rkdojkkgsfq" path="res://assets/tilemaps/overlay.png" id="5_wn0dv"]
-[ext_resource type="Texture2D" uid="uid://cr103uili4dv5" path="res://assets/tilemaps/furniture.png" id="6_ilw3i"]
+[ext_resource type="Texture2D" uid="uid://debubwrr7aypo" path="res://assets/tilemaps/tilemap.png" id="4_g7a0r"]
+[ext_resource type="Texture2D" uid="uid://dkpqgoulnq3g3" path="res://assets/tilemaps/overlay.png" id="5_wn0dv"]
+[ext_resource type="Texture2D" uid="uid://bic5ve4fmwouo" path="res://assets/tilemaps/furniture.png" id="6_ilw3i"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jnv3a"]
 texture = ExtResource("4_g7a0r")
