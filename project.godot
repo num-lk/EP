@@ -13,6 +13,7 @@ config_version=5
 config/name="EP"
 run/main_scene="res://scene.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
+boot_splash/show_image=false
 boot_splash/image="res://assets/sprites/peza.png"
 config/icon="res://assets/nodes/player/icon.svg"
 boot_splash/minimum_display_time=5000
