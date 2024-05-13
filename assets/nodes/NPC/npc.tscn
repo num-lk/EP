@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://c1vnn5y42rhcc"]
+
+[ext_resource type="Script" path="res://assets/nodes/NPC/npc_controller.gd" id="1_gs42b"]
+[ext_resource type="SpriteFrames" uid="uid://xjbtdsl8ouks" path="res://assets/nodes/NPC/Friend/Animations/walk_D.tres" id="2_pb8bj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j3ffe"]
+size = Vector2(16, 28)
+
+[node name="NPC" type="AnimatableBody2D" groups=["NPC"]]
+script = ExtResource("1_gs42b")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("2_pb8bj")
+animation = &"walk_D"
+frame_progress = 0.316766
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 8)
+shape = SubResource("RectangleShape2D_j3ffe")

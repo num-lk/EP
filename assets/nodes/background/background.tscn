@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://j2q28vl2pfng"]
+
+[ext_resource type="Texture2D" uid="uid://dd25m8s2x6ic4" path="res://assets/nodes/background/grid.png" id="1_cako0"]
+
+[node name="Background" type="ParallaxBackground"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 80.0
+offset_bottom = 45.0
+scale = Vector2(4, 4)
+texture = ExtResource("1_cako0")
+stretch_mode = 1

@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://dwb53n8bk83nw"]
+
+[ext_resource type="Script" path="res://assets/nodes/NPC/Friend/friend.gd" id="1_a51uc"]
+[ext_resource type="SpriteFrames" uid="uid://xjbtdsl8ouks" path="res://assets/nodes/NPC/Friend/Animations/walk_D.tres" id="2_o1ee7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6mpx5"]
+
+[node name="Friend" type="AnimatableBody2D"]
+script = ExtResource("1_a51uc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("2_o1ee7")
+animation = &"walk_D"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_6mpx5")

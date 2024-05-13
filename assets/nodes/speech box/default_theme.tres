@@ -1,0 +1,9 @@
+[gd_resource type="Theme" load_steps=3 format=3 uid="uid://cfb8ixcqpsaop"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wv2v7"]
+
+[sub_resource type="SystemFont" id="SystemFont_cldgf"]
+
+[resource]
+default_font = SubResource("SystemFont_cldgf")
+/styles/dialogue_choice = SubResource("StyleBoxEmpty_wv2v7")
